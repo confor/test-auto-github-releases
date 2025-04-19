@@ -22,7 +22,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: rust-binary-${{ github.sha }}
+        name: hello-${{ github.sha }}
         path: target/release/hello-world
         retention-days: 1
     - name: Release
