@@ -25,3 +25,7 @@ jobs:
         name: rust-binary-${{ github.sha }}
         path: target/release/hello-world
         retention-days: 1
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: target/release/hello-world
